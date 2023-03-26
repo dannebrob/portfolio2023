@@ -1,0 +1,599 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  padding: 0;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a className get default styles */
+a:not([className]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  all: unset;
+}
+/* Fonts */
+@font-face {
+  font-family: Satoshi-black-italic;
+  src: url(assets/fonts/Satoshi-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Satoshi-bold;
+  src: url(assets/fonts/Satoshi-Bold.ttf);
+}
+@font-face {
+  font-family: Satoshi-bold-italic;
+  src: url(assets/fonts/Satoshi-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Satoshi-italic;
+  src: url(assets/fonts/Satoshi-Italic.ttf);
+}
+@font-face {
+  font-family: Satoshi-light;
+  src: url(assets/fonts/Satoshi-Light.ttf);
+}
+@font-face {
+  font-family: Satoshi-light-italic;
+  src: url(assets/fonts/Satoshi-LightItalic.ttf);
+}
+@font-face {
+  font-family: Satoshi-medium;
+  src: url(assets/fonts/Satoshi-Medium.ttf);
+}
+@font-face {
+  font-family: Satoshi-medium-italic;
+  src: url(assets/fonts/Satoshi-MediumItalic.ttf);
+}
+@font-face {
+  font-family: Satoshi-regular;
+  src: url(assets/fonts/Satoshi-Regular.ttf);
+}
+@font-face {
+  font-family: Satoshi-variable;
+  src: url(assets/fonts/Satoshi-Variable.ttf);
+}
+@font-face {
+  font-family: Satoshi-variable-italic;
+  src: url(assets/fonts/Satoshi-VariableItalic.ttf);
+}
+@font-face {
+  font-family: EB-Garamond;
+  src: url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+}
+
+/* Colors */
+:root {
+  --robin-egg-blue: #7bb2be;
+  --blue: #0b24f5;
+  --light-blue: #2483e0;
+  --dark-pink: #eb5577;
+  --egg-white: #edffff;
+  --black: #171717;
+  --dark-yellow: #ffd338;
+  --forest-green: #6db486;
+  --gray: #d0d0d0;
+  --light-gray: #b0abab;
+  --ligt-gray-2: #f5f5f5;
+  --white: #ffffff;
+}
+
+/* -------------- */
+body {
+  font-family: 'EB Garamond';
+}
+p {
+  font-size: 1.2rem;
+}
+.heading {
+  font-size: 3rem;
+  font-family: 'Satoshi-bold', sans-serif;
+  color: var(--blue);
+  width: fit-content;
+}
+
+/* Hero Section*/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-image {
+  display: none;
+  width: 100%;
+  height: 412px;
+  background-color: var(--robin-egg-blue);
+}
+
+.hero-image img {
+  width: 40%;
+}
+
+.hero-info {
+  width: 80%;
+  margin: 2rem;
+}
+
+.hero-info h2 {
+  font-family: 'Satoshi-bold', sans-serif;
+  color: var(--blue);
+}
+.hero-info h1 {
+  font-family: 'Satoshi-black', sans-serif;
+}
+.hero-info h3 {
+  font-family: 'Satoshi-medium', sans-serif;
+}
+.hero-picture {
+  width: 164px;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.socials-links ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.socials-links li {
+  padding: 1rem;
+}
+
+.socials-links li svg {
+  fill: var(--gray);
+}
+.socials-links li svg:hover,
+.socials-links li svg:focus {
+  fill: var(--black);
+}
+
+.scroll-down {
+  color: var(--blue);
+  font-family: 'Satoshi-bold', sans-serif;
+  text-decoration: underline;
+}
+.scroll-down svg {
+  fill: var(--blue);
+}
+
+/* Tech Section */
+.tech {
+  background-color: var(--egg-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  height: 530px;
+}
+
+.js {
+  background-color: var(--dark-pink);
+  color: var(--white);
+}
+.react {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.mob {
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+
+/* feat-project */
+
+.feat-project {
+  margin: 2rem 0;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 2rem 0;
+}
+.card img {
+  width: 100%;
+}
+
+.card h2 {
+  padding: 1rem 0 1rem;
+  font-family: 'Satoshi-black', sans-serif;
+  font-size: 2rem;
+}
+.card p {
+  font-family: 'EB-Garamond', 'Times New Roman', Times, serif;
+}
+
+.card ul {
+  display: flex;
+  padding: 0;
+}
+.card li {
+  font-family: 'Satoshi', sans-serif;
+  margin: 0.1rem;
+  padding: 0.2rem;
+  font-size: 1rem;
+  background-color: var(--black);
+  color: var(--egg-white);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  width: fit-content;
+}
+.button a {
+  background-color: var(--ligt-gray-2);
+  padding: 0.5rem;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0.2rem;
+}
+.button p {
+  font-family: 'Satoshi-bold', sans-serif;
+  padding: 0 10px;
+}
+.github-button a:hover,
+.github-button a:focus {
+  background-color: var(--dark-pink);
+  color: var(--egg-white);
+  fill: var(--egg-white);
+}
+.demo-button a:hover,
+.demo-button a:focus {
+  background-color: var(--blue);
+  color: var(--egg-white);
+  fill: var(--egg-white);
+}
+
+/* my words */
+.my-words {
+  background-color: var(--forest-green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+.my-words h2 {
+  color: var(--dark-pink);
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem 0;
+}
+
+.blog-post {
+  margin: 0 0 2rem 0;
+}
+
+.blog-post .date {
+  color: var(--dark-pink);
+  font-family: 'Satoshi-black', sans-serif;
+  padding: 1rem 0;
+}
+
+.blog-post h3 {
+  font-family: 'Satoshi-black', sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.blog-post p {
+  padding: 1rem 0;
+}
+.read-more-button p {
+  padding: 0 10px;
+}
+
+.read-more-button a:hover,
+.read-more-button a:focus {
+  background-color: var(--dark-yellow);
+}
+
+/* Skills */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--egg-white);
+  padding: 2rem 2rem;
+}
+.skills h3 {
+  text-align: center;
+}
+.skills ul[role='list'] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills h3 {
+  color: var(--egg-white);
+  margin-left: 0;
+}
+
+.skill-block {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.skill-block > * {
+  justify-self: center;
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.code h3 {
+  width: fit-content;
+  background-color: var(--dark-pink);
+}
+.toolbox h3 {
+  width: fit-content;
+  background-color: var(--blue);
+}
+.more h3 {
+  width: fit-content;
+  background-color: var(--light-blue);
+}
+.upcoming h3 {
+  width: fit-content;
+  background-color: var(--forest-green);
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.footer-info {
+  margin: 2rem;
+  font-family: 'Satoshi-black', sans-serif;
+}
+.footer-info h2 {
+  font-family: 'Satoshi-bold', sans-serif;
+  color: var(--blue);
+}
+.footer-info h1 {
+  font-family: 'Satoshi-black', sans-serif;
+}
+.footer-info h3 {
+  font-family: 'Satoshi-medium', sans-serif;
+}
+footer .heading {
+  color: var(--dark-pink);
+  font-family: 'Satoshi-black', sans-serif;
+}
+.footer-picture {
+  width: 164px;
+  padding: 1rem 0;
+}
+footer .footer-info p {
+  font-family: 'Satoshi-bold', sans-serif;
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+/* @media */
+
+@media screen and (min-width: 744px) {
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-text {
+    margin: 2rem 0;
+  }
+
+  .socials-links ul {
+    justify-content: start;
+    margin: 2rem 1rem;
+  }
+
+  .tech {
+    margin: -3rem 0 0 0;
+  }
+
+  .feat-project {
+    margin: 4rem 0 2rem 0;
+  }
+
+  .card {
+    display: flex;
+  }
+
+  .card img {
+    width: 30%;
+  }
+
+  .card > div {
+    padding: 0 2rem;
+  }
+  .button-container {
+    flex-direction: row;
+  }
+  .button-container > .button {
+    padding: 0 0.7rem;
+  }
+
+  .blog-container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+
+  .skill-block {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 5rem;
+  }
+  .skill-block > * {
+    align-items: start;
+    justify-self: start;
+  }
+
+  .skills ul[role='list'] {
+    align-items: start;
+  }
+  .name-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+  .name-info {
+    width: fit-content;
+  }
+  .name-info > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer-info p {
+    padding: 0.2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+  }
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .hero-info {
+    width: 100%;
+    margin: 0;
+  }
+  .hero-info > * {
+    margin: 0 2rem;
+  }
+  .scroll-down {
+    position: absolute;
+    top: 85vh;
+  }
+
+  .tech {
+    margin: 0;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .tech > * {
+    justify-self: center;
+  }
+
+  .tech p {
+    padding: 0 6rem 0 0;
+  }
+
+  .skill-block {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem 5rem;
+  }
+}
