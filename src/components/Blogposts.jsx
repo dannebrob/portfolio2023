@@ -33,6 +33,8 @@ const Blogposts = () => {
       {status === 'loading' && <p>Fetching data...</p>}
       {status === 'success' && (
         <div className="blog-container">
+          <h2 class="heading my-words">My Words</h2>
+
           {data.user.publication.posts.map((post) => {
             return (
               <div className="blog-post blog-one" key={post._id}>

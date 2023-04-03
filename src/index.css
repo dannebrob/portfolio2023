@@ -335,17 +335,11 @@ p {
 }
 
 /* my words */
-.my-words {
-  background-color: var(--forest-green);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 2rem;
-}
 
-.my-words h2 {
+.my-words {
   color: var(--dark-pink);
+  justify-self: center;
+  padding: 0 0 1rem 0;
 }
 
 .blog-container {
@@ -518,6 +512,7 @@ footer .footer-info p {
   .blog-container {
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
+    margin: 2rem 1rem;
   }
 
   .skill-block {

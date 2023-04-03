@@ -4,13 +4,13 @@ function Featured() {
   const projects = [
     {
       id: 1,
-      name: 'Chatbot build in JavaScript',
-      text: 'The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.',
-      tech: ['HTML', 'CSS', 'Javascript'],
-      githubUrl: 'https://github.com/dannebrob/project-chatbot',
-      liveLink: 'https://technigo-fantasy-chat-bot.netlify.app/',
+      name: 'Movie Time',
+      text: 'A web-app that helps the user to find popular movies, using the API from themoviedb.org as its backend. This was a pair-programming project, built with React',
+      tech: ['React', 'CSS', 'API', 'Pair Programming'],
+      githubUrl: 'https://github.com/dannebrob/project-movies',
+      liveLink: 'https://heartfelt-torrone-e608c2.netlify.app/',
       cardImgUrl:
-        'https://user-images.githubusercontent.com/65211641/218280389-2c0f8a40-23c7-429b-9ea0-49fdbf1e7671.png'
+        'https://res.cloudinary.com/dqnpivjb6/image/upload/v1680439278/technigo-movie_ykzfjd.jpg'
     },
     {
       id: 2,
@@ -20,16 +20,43 @@ function Featured() {
       githubUrl: 'https://github.com/dannebrob/interactive-card-details',
       liveLink: 'https://interactivecreditcard.netlify.app/',
       cardImgUrl:
-        'https://user-images.githubusercontent.com/65211641/227802002-69c58c61-efc7-4470-9385-7ea15c61d63d.png'
+        'https://res.cloudinary.com/dqnpivjb6/image/upload/v1680440046/My_project-1_lihebq.jpg'
     },
     {
       id: 3,
-      name: 'Interactive credit card payment',
+      name: 'Coffee ordering app',
       text: 'This was the final big project in the React course, by Folkuniverisitetet and ZooCom. It summed up most of the course syllabus. The project was a great hands-on project with React, Redux, React Router and API calls. A lot of focus was also on problem-solving and decision-making, since the rules of the project were not predefined. After the project, I feel that lots of the concepts of React and Redux were solidified and tested my ability to find my own solutions.',
       tech: ['React', 'Redux', 'React Router', 'API'],
       githubUrl: 'https://github.com/dannebrob/7-Slutexaminationen-React-YH/',
       cardImgUrl:
         'https://user-images.githubusercontent.com/65211641/227802140-e5f3c6e8-0cb1-4053-9b5a-9755f8c5e74f.jpg'
+    },
+    {
+      id: 4,
+      name: 'Elins Glada Ekologiska Kor',
+      text: 'A big project, built closely with the business owner. First, I made a mockup in Figma and after feedback from the client, we found a design that was appealing and easy to use for the end-user. A big challenge for me to make a WordPress theme from scratch that would work with all possible plugins and other add-ons that could be used in the future. To organize the input from my client and upcoming tasks I used a Trello board, a great tool for visualization.',
+      tech: [
+        'Wordpress',
+        'HTML5',
+        'CSS',
+        'PHP',
+        'Mobile-first',
+        'Image Optimizing'
+      ],
+      githubUrl: 'https://github.com/dannebrob/elins2.0-wordpress-theme',
+      liveLink: 'https://www.elinsgladaekologiskakor.se/',
+      cardImgUrl:
+        'https://res.cloudinary.com/dqnpivjb6/image/upload/v1680439278/Elins-glada-kor_j3wkrr.jpg'
+    },
+    {
+      id: 5,
+      name: 'Happy Thoughts - A Micro-blogging service',
+      text: 'A happy twitter-like wall for all you thoughts. Share what you are thinking about right now!',
+      tech: ['React', 'HTML5', 'CSS', 'API'],
+      githubUrl: 'https://github.com/dannebrob/project-happy-thoughts',
+      liveLink: 'https://technigo-happy-thoughts-app.netlify.app/',
+      cardImgUrl:
+        'https://res.cloudinary.com/dqnpivjb6/image/upload/v1680439278/technigo-happy_m5in5y.jpg'
     }
   ];
   return (
