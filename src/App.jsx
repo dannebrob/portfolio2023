@@ -191,7 +191,7 @@ function App() {
           <p>
             HTML, CSS, Flexbox, <span className="js">JavaScript,</span> ES6,
             JSX,
-            <span className="react">React,</span> React Hooks, Redux, Node.js,
+            <span className="react">React,</span> React Hooks, Redux, Typescript, Node.js,
             Mongo DB, Web Accessibly, API:s,
             <span className="mob">mob-programming,</span>
             pair-programming, Github.
