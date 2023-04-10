@@ -261,6 +261,9 @@ p {
   background-color: var(--light-blue);
   color: var(--white);
 }
+.ts {
+  background-color: var(--dark-yellow);
+}
 
 /* feat-project */
 
@@ -340,6 +343,8 @@ p {
   color: var(--dark-pink);
   justify-self: center;
   padding: 0 0 1rem 0;
+  width: 20rem;
+  margin: auto;
 }
 
 .blog-container {
